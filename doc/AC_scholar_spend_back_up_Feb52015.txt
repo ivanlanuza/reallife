@@ -1,0 +1,70 @@
+									
+									
+									
+									
+									
+									
+										if ($total_scholar_percent >= 80 && $total_scholar_percent < 95)
+											{
+												/*DEPRECATED TO NOT SHOW ALLOWANCE FORECAST
+												echo "
+														<div class='progress progress-striped active'>
+															<div class='progress-bar progress-bar-warning ' role='progressbar' aria-valuenow='" . $scholar_forecast . "' aria-valuemin='0' aria-valuemax='100' style='width: " . $scholar_forecast . "%;'>
+																allowance: Php" . $allowance_amount . "
+															</div>
+															<div class='progress-bar progress-bar-warning ' role='progressbar' aria-valuenow='" . $scholar_percent . "' aria-valuemin='0' aria-valuemax='100' style='width: " . $scholar_percent . "%;'>
+																others: Php" . $other_spend_amount . "
+															</div>
+														</div>										
+												";
+												*/
+												echo "
+														<div class='progress progress-striped active'>
+															<div class='progress-bar progress-bar-danger ' role='progressbar' aria-valuenow='" . $scholar_percent . "' aria-valuemin='0' aria-valuemax='100' style='width: " . $scholar_percent . "%;'>
+																Php" . $other_spend_amount . "
+															</div>
+														</div>										
+												";											
+											}
+										elseif ($total_scholar_percent >= 95 && $total_scholar_percent < 100)
+											{
+												echo "
+														<div class='progress progress-striped active'>
+															<div class='progress-bar progress-bar-danger ' role='progressbar' aria-valuenow='" . $scholar_forecast . "' aria-valuemin='0' aria-valuemax='100' style='width: " . $scholar_forecast . "%;'>
+																allowance: Php" . $allowance_amount . "
+															</div>
+															<div class='progress-bar progress-bar-danger ' role='progressbar' aria-valuenow='" . $scholar_percent . "' aria-valuemin='0' aria-valuemax='100' style='width: " . $scholar_percent . "%;'>
+																others: Php" . $other_spend_amount . "
+															</div>
+														</div>										
+												";
+											
+											}
+										elseif ($total_scholar_percent >= 100)
+											{
+												$scholar_percent = 100 - $scholar_forecast;
+												echo "
+														<div class='progress progress-striped active'>
+															<div class='progress-bar progress-bar-danger ' role='progressbar' aria-valuenow='" . $scholar_forecast . "' aria-valuemin='0' aria-valuemax='100' style='width: " . $scholar_forecast . "%;'>
+																allowance: Php" . $allowance_amount . "
+															</div>
+															<div class='progress-bar progress-bar-danger ' role='progressbar' aria-valuenow='" . $scholar_percent . "' aria-valuemin='0' aria-valuemax='100' style='width: " . $scholar_percent . "%;'>
+																others: Php" . $other_spend_amount . "
+															</div>
+														</div>										
+												";
+											
+											}
+										else
+											{
+												echo "
+														<div class='progress progress-striped active'>
+															<div class='progress-bar progress-bar-success ' role='progressbar' aria-valuenow='" . $scholar_forecast . "' aria-valuemin='0' aria-valuemax='100' style='width: " . $scholar_forecast . "%;'>
+																allowance: Php" . $allowance_amount . "
+															</div>
+															<div class='progress-bar progress-bar-success ' role='progressbar' aria-valuenow='" . $scholar_percent . "' aria-valuemin='0' aria-valuemax='100' style='width: " . $scholar_percent . "%;'>
+																others: Php" . $other_spend_amount . "
+															</div>
+														</div>										
+												";
+											}

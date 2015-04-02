@@ -1,0 +1,310 @@
+body {
+	padding-top: 70px;
+	font-family: 'Segoe UI', 'Helvetica Neue', 'Helvetica', 'arial', 'sans-serif';
+	font-size: 1.5em;
+}
+
+	.homescreen {
+		background-image: url('../img/bg_splat_light.jpg');
+	}
+
+	.modal-text {
+		font-family: 'Segoe UI', 'Helvetica Neue', 'Helvetica', 'arial', 'sans-serif';	
+	}
+	
+	.profilepic {
+		width: 140px;
+		border-style: solid;
+		border-color: #FFFFFF;
+		border-width: 8px;
+	}
+	
+	.centerdiv {
+		text-align: center;
+	}
+
+	.middlediv {
+		float: none !important;
+		vertical-align: middle;
+	}
+	
+	.rightdiv {
+		text-align: right;
+	}
+	
+	.bold_text {
+		font-weight: bold;
+	}
+	
+	#footerspace {
+		margin-top: 40px;
+	}
+	
+	.note_overflow {
+		width: 180px;
+	}
+
+	.username {
+		color: #FFFFFF;
+	}
+
+	
+/* FOR NAVBAR */
+
+.navbar_custom {
+	background: linear-gradient(to bottom, #5cb85c 0%, #419641 100%);
+	box-shadow: 0 0px 0 #408640;
+	z-index: 100;
+	font-size: 16px;
+}
+.navbar_custom .navbar-brand {
+	color: #ffffff;
+}
+.navbar_custom .navbar-brand:hover, .navbar_custom .navbar-brand:focus {
+	color: #ffffff;
+}
+.navbar_custom .navbar-text {
+	color: #ffffff;
+}
+.navbar_custom .navbar-nav > li > a {
+	color: #ffffff;
+}
+.navbar_custom .navbar-nav > li > a:hover, .navbar_custom .navbar-nav > li > a:focus {
+	color: #FFFF00;
+	/*background-color: #1D9E74;*/
+	background: none;
+}
+.navbar_custom .navbar-nav > .active > a, .navbar_custom .navbar-nav > .active > a:hover, .navbar_custom .navbar-nav > .active > a:focus {
+	color: #ffffff;
+	background-color: #1D9E74;
+}
+.navbar_custom .navbar-nav > .open > a, .navbar_custom .navbar-nav > .open > a:hover, .navbar_custom .navbar-nav > .open > a:focus {
+	color: #ffffff;
+	background-color: #1D9E74;
+}
+.navbar_custom .navbar-toggle {
+	border-color: #1D9E74;
+}
+.navbar_custom .navbar-toggle:hover, .navbar_custom .navbar-toggle:focus {
+	background-color: #1D9E74;
+}
+.navbar_custom .navbar-toggle .icon-bar {
+	background-color: #ffffff;
+}
+.navbar_custom .navbar-collapse,
+.navbar_custom .navbar-form {
+	border-color: #ffffff;
+}
+.navbar_custom .navbar-link {
+	color: #ffffff;
+}
+.navbar_custom .navbar-link:hover {
+	color: #ffffff;
+}
+
+.navbar_custom .navbar-nav .open .dropdown-menu > li > a {
+	text-align: left;
+	font-size: 1.1em;
+}
+
+
+@media (max-width: 767px) {
+	.navbar_custom .navbar-nav .open .dropdown-menu > li > a {
+		color: #ffffff;
+	}
+	.navbar_custom .navbar-nav .open .dropdown-menu > li > a:hover, .navbar_custom .navbar-nav .open .dropdown-menu > li > a:focus {
+		color: #ffffff;
+	}
+	.navbar_custom .navbar-nav .open .dropdown-menu > .active > a, .navbar_custom .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar_custom .navbar-nav .open .dropdown-menu > .active > a:focus {
+		color: #ffffff;
+		background-color: #1D9E74;
+	}
+}
+
+	
+/* INDEX.PHP */
+	body#login {
+		text-align: center;
+		background: url('../img/bg_splat.jpg');
+	}
+
+	#indexheading {
+		margin-top: 10%;
+		font-family: 'SEGOE UI';
+		font-size: 4em;
+		margin-bottom: 20%;
+		color: #3D7B0C;
+	}
+
+	#button_fb_login {
+		width: 240px;
+		height: 54px;
+		font-size: 16px;
+	}
+
+	.hide {
+		display: none;
+	}
+
+	.show {
+		display: block;
+	}
+
+	#loginwaiting {
+		margin-top: 30px;
+	}
+
+	#loginwaiting a{
+		color: #FFFFFF;
+	}
+
+	#errorback {
+		color: #FF0000;
+		font-size: 1em;
+		margin-top: 20px;
+		background: #FFFFFF;
+		width: 60%;
+		text-align: center;
+		margin-right: auto;
+		margin-left: auto;
+		opacity:0.6;
+		-moz-border-radius: 8px;
+		border-radius: 8px;
+	}
+
+/* HOME PAGE */
+	#help_tip {
+		margin-left: 20%;
+	}
+	
+/* AC_request_create.PHP */	
+
+	.pagetitle {
+		font-size: 80px;
+		
+		text-align: center;
+		margin-top: 40px;
+		color: #419641;
+		margin-bottom: 50px;
+	}
+	
+	/*THIS CHANGES THE HEADER AND FOOTER BAR*/
+	.ui-widget-header { 
+		background-color: #FFFFFF !important;
+		background: #FFFFFF !important;
+		color: #419641; 
+		font-size: 16px;
+		font-family: 'segoe ui', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+		border: 0px;
+	}
+
+	/*THIS CHANGES THE CONTENTS OF THE TABLE*/
+	.ui-widget-content { 
+		background-color: #f5f5f5;
+		border: 0px solid #FFFFFF !important;
+		border-bottom: 1px solid #dddddd !important;
+		border-top: 1px solid #dddddd !important;
+		font-size: 12px;
+		font-family: 'segoe ui', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+		height: 52px;
+		margin-bottom: 40px;
+	}
+	
+	#btnviewrequest {
+		height: 44px;
+	}
+
+	
+/* AC_request_view_open.PHP */	
+	
+	.td_scholar_5 {
+		width = 5%;
+	}	
+	
+	.td_scholar_10 {
+		width = 10%;
+	}		
+	
+	.td_scholar_15 {
+		width = 15%;
+	}		
+	
+	.td_scholar_20 {
+		width = 20%;
+	}	
+	
+	.td_scholar_25 {
+		width = 25%;
+	}		
+	
+	.column_name {
+		color: #419641; 
+		font-size: 16px;
+		font-weight: bold;
+	}
+	
+	.note_text {
+		font-size: 12px;
+		font-style: italic;
+	}
+	
+	#requesttabcontent{
+	    border-left: 1px solid #ddd;
+		border-right: 1px solid #ddd;
+		padding: 10px;
+		border-bottom: 1px solid #ddd;	
+		margin-bottom: 40px;
+	}
+
+/* AC_scholar_spend.PHP */		
+
+	.img-scholar_data {
+		width: 120px;
+		margin-bottom: 40px;
+		margin-top: 5px;
+	}
+	
+	.td_scholar_50 {
+		width: 70%;
+	}
+	
+/* RLS_REQUEST_APPROVE */
+
+	.input_text_width_60 {
+		width: 220px;
+	}	
+	
+	#btnProcessAll {
+		height: 48px;
+		width: 160px;
+		font-size: 16px;
+	}
+	
+	.font_green {
+		color: #419641;
+	}
+	
+	.font_red {
+		color: #FF0000;
+	}
+
+	.font_yellow{
+		color: #FFFF00;
+	}	
+	
+/*RLS_request_finance.php*/
+
+	.date_width {
+		width: 262px;
+	}
+	
+/*RLS_scholar_manage.php*/
+
+	.sml-img {
+		width: 80px;
+	}
+	
+/*RLS_site_config_data */
+	.column_size_200 {
+		width: 400px;
+	}
